@@ -2,7 +2,14 @@
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
-		extend: {}
+		extend: {
+			fontFamily: {
+				'heading-jp': ['M PLUS 2'],
+				'primary-jp': ['Noto Serif JP'],
+				'heading-en': ['Karantina'],
+				'primary-en': ['Noto Sans'],
+			}
+		}
 	},
 	plugins: []
 };
