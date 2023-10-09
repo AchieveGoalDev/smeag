@@ -27,7 +27,7 @@
 		<slot />
 	</a>
 {:else if params.function}
-	<button on:click={params.function}>
+	<button class={basicButton + dispatchStyle(params.color)} on:click={params.function}>
 		<slot />
 	</button>
 {/if}
