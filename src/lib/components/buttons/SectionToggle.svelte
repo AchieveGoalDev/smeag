@@ -20,8 +20,10 @@
 <button
 	style:transform={`rotate(${rotateValue}deg)`}
 	style:transition={'transform .3s cubic-bezier(.51,.92,.24,1.15)'}
-	class="shadow-md transition-all mx-5 my-auto rounded-full bg-white bg-opacity-70 hover:bg-opacity-90 h-10 w-10 grid place-content-center"
+	class="transition-all mx-5 my-auto rounded-full transition-all bg-white bg-opacity-70 hover:bg-opacity-90 h-10 w-10 grid place-content-center border hover:bg-gray-200"
 	on:click={handleToggle}
 >
-	<Icon icon="ion:chevron-up" class="text-2xl mb-2" />
+	<div class="text-xl">
+		<Icon icon="ion:chevron-up" />
+	</div>
 </button>

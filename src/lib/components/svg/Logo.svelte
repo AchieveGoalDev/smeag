@@ -17,7 +17,7 @@
 	/>
 	<path class="g" d="m23.1129,8.9733v.01c.08-.03.15-.07.23-.1l-.23.09Z" />
 	<svg
-		style:transform={`rotate(${scrollFactor}deg)`}
+		style:transform={`rotate(${-scrollFactor}deg)`}
 		width="238.1915"
 		height="68.8298"
 		viewBox="0 0 238.1915 68.8298"

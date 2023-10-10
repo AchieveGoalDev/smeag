@@ -10,8 +10,8 @@
 
 	let isOpen = true;
 
-	function handleThemeColor(themColor: string) {
-		return 'bg-orange-50 border-orange-600 border-b-4 py-5';
+	function handleThemeColor(themeColor: string) {
+		return ' bg-white py-5';
 	}
 </script>
 
