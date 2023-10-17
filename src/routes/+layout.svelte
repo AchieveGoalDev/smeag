@@ -27,7 +27,7 @@
 				<li
 					class="transition-all hover:text-sky-600 hover:-translate-y-[2px] select-none cursor-pointer"
 				>
-					留学の流れ
+					<a href="/howto"> 留学の流れ </a>
 				</li>
 				<li>キャンパス紹介</li>
 				<li>コース紹介</li>

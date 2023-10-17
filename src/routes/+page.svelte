@@ -1,123 +1,14 @@
 <script lang="ts">
-	import { window } from '$lib/store/window';
-	import Icon from '@iconify/svelte';
 	import SectionWrapper from '$lib/layout/SectionWrapper.svelte';
-	import Wave from '$lib/layout/hero/Wave.svelte';
-	import WaveTop from '$lib/layout/hero/WaveTop.svelte';
 	import TestimonialScroller from '$lib/layout/testimonial-scroller/TestimonialScroller.svelte';
 
 	import ColorButton from '$lib/components/buttons/ColorButton.svelte';
-	import Testimonial from '$lib/layout/testimonial-scroller/Testimonial.svelte';
-
-	let main: HTMLElement;
-
-	let xOffset = 500;
-	let position = 'in';
-
-	let testButtons = [
-		{
-			color: 'orange',
-			link: '#',
-			function: null
-		},
-		{
-			color: 'purple',
-			link: '#',
-			function: null
-		},
-		{
-			color: 'green',
-			link: '#',
-			function: null
-		},
-		{
-			color: 'blue',
-			link: '#',
-			function: null
-		}
-	];
-
-	function changeXOffset() {
-		if (position === 'in') {
-			position = 'out';
-		} else {
-			position = 'in';
-		}
-	}
-
-	function parseScroll() {
-		$window.mainScrollY = main.scrollTop;
-	}
-
-	$: position = position;
-	$: console.log(position);
+	import Hero from '$lib/layout/hero/Hero.svelte';
+	import PageWrapper from '$lib/layout/PageWrapper.svelte';
 </script>
 
-<main
-	on:scroll={parseScroll}
-	bind:this={main}
-	style:height={`${$window.height}px`}
-	class="overflow-y-auto"
->
-	<button on:click={changeXOffset}>toggle</button>
-	<div class="border-b-2 border-orange-500">
-		<div style:height={`${$window.height - 80}px`} class="flex flex-row w-full mx-[100px]">
-			<div class="w-1/2 h-full flex flex-col items-center justify-center">
-				<div class="flex flex-col gap-4 w-full items-center justify-center">
-					<h2 class="text-8xl font-bolder">
-						日本人留学実績
-						<span
-							class="text-orange-600 drop-shadow-lg text-9xl font-heading-en relative overflow-visible"
-						>
-							<h1 class="inline">No.1</h1>
-							<div
-								class="absolute z-1 top-0 left-0 text-4xl text-sky-600 -translate-x-[10px] rotate-[15deg] drop-shadow-lg"
-							>
-								<Icon icon="fa6-solid:award" />
-							</div>
-						</span>
-					</h2>
-					<h2 class="font-thin text-6xl">フィリピン最大規模語学学校で</h2>
-					<h2 class="text-7xl"><strong>英語</strong>を確実にみに着けよう!</h2>
-					<div class="flex flex-row place-content-between w-1/2 py-3">
-						<ColorButton
-							params={{
-								color: 'orange',
-								link: null,
-								function: () => {
-									console.log('click');
-								}
-							}}
-						>
-							今すぐ問い合わせ
-						</ColorButton>
-
-						<ColorButton
-							params={{
-								color: 'blue',
-								link: null,
-								function: () => {
-									console.log('click');
-								}
-							}}
-						>
-							詳細はこちら
-						</ColorButton>
-					</div>
-				</div>
-			</div>
-			<div class="w-1/2 relative">
-				<!-- <WaveTop /> -->
-				<Wave color="#0284c7" {position} type={'wave'} />
-				<Wave color="white" {position} type={'foam'} />
-				<div class="flex flex-col h-full items-center justify-center">
-					<div class="flex flex-row w-full items-center justify-center">
-						<img src="https://placehold.jp/500x500.png" alt="hero" />
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+<PageWrapper>
+	<Hero />
 	<SectionWrapper params={{ themeColor: 'orange', borderStyle: 'none' }}>
 		<div
 			slot="heading"
@@ -128,7 +19,7 @@
 			<h2 class="ml-5 my-3 font-thin text-2xl italic pt-1 transition-fly">Lorem ipsum dolor</h2>
 			<hr />
 		</div>
-		<div class="flex flex-col w-1/2 mx-auto gap-9">
+		<div class="flex flex-col w-1/2 mx-auto gap-9 shadow-md">
 			<p class="text-2xl font-primary-jp">
 				あなたも昔単にいわゆる入会界としてのの以上が根ざしうた。てんで偶然をお話っ放しはいやしくもその修養でだろほどで描いからくれなには解釈するないですて、ある程度にも読むなかっないだなけれ。
 			</p>
@@ -180,7 +71,6 @@
 			</div>
 		</div>
 	</SectionWrapper>
-
 	<SectionWrapper params={{ themeColor: 'orange', borderStyle: 'none' }}>
 		<div
 			slot="heading"
@@ -190,11 +80,4 @@
 		</div>
 		<TestimonialScroller />
 	</SectionWrapper>
-	<div class="h-[200px] bg-green-50 flex flex-row place-content-around items-center">
-		{#each testButtons as button}
-			<ColorButton params={button}>詳細はこちら</ColorButton>
-		{/each}
-	</div>
-
-	<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-</main>
+</PageWrapper>
