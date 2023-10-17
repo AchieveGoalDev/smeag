@@ -10,6 +10,33 @@
 		' 渡航前のご案内',
 		'ご出発'
 	];
+
+	let progress2 = [
+		{
+			icon: 'gis:flag-start',
+			text: 'カウンセリング'
+		},
+		{
+			icon: 'icon-park-solid:right-c',
+			text: '留学プランの決定'
+		},
+		{
+			icon: 'icon-park-solid:right-c',
+			text: '費用のお見積り'
+		},
+		{
+			icon: 'icon-park-solid:right-c',
+			text: 'お申込み'
+		},
+		{
+			icon: 'icon-park-solid:right-c',
+			text: '渡航前のご案内'
+		},
+		{
+			icon: 'ion:location-sharp',
+			text: 'ご出発!'
+		}
+	];
 </script>
 
 <div class="flex flex-row py-5 w-full place-content-between px-5 shadow-lg overflow-visible">
