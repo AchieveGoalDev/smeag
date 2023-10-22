@@ -19,5 +19,9 @@ export const navButtons: NavButton[] = [
     {
         url: "/faq",
         text: "よくある質問"
+    },
+    {
+        url: "/contact",
+        text: "お問い合わせ"
     }
 ]
