@@ -19,3 +19,9 @@
 
 	<Footer />
 </main>
+
+<style class="postcss">
+	main {
+		scroll-behavior: smooth;
+	}
+</style>
