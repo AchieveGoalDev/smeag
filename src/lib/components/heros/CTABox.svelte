@@ -10,7 +10,7 @@
 		<slot />
 		<div class="align-middle opacity-100">
 			<ColorButton params={{ color: 'orange', link: '#', function: null }}>
-				お問い合わせ・無料留学相談
+				yお問い合わせ・無料留学相談
 			</ColorButton>
 		</div>
 	</div>
