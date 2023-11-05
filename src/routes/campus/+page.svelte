@@ -2,87 +2,35 @@
 	import PageWrapper from '$lib/layout/PageWrapper.svelte';
 	import VideoHeader from '$lib/layout/video-header/VideoHeader.svelte';
 	import CtaBox from '$lib/components/heros/CTABox.svelte';
-
-	import ColorButton from '$lib/components/buttons/ColorButton.svelte';
+	import HeadingList from '$lib/components/lists/HeadingList.svelte';
+	import ThreeList from '$lib/components/lists/ThreeList.svelte';
+	import Iframe from '$lib/components/video/Iframe.svelte';
+	import MainHeading from '$lib/components/headings/MainHeading.svelte';
 
 	import ImageTitleCard from '$lib/components/cards/ImageTitleCard.svelte';
 	import Icon from '@iconify/svelte';
-
-	// <ColorButton
-	//   params={{
-	//     color: 'purple',
-	//     link: null,
-	//     function: () => {
-	//       console.log('click');
-	//     }
-	//   }}
-	// >
-	//   詳細はこちら
-	// </ColorButton>
-	// </div>
-	// <div class="shadow-lg bg-purple-600 p-5 flex flex-col flex-shrink max-w-[350px] gap-5">
-	// <h1 class="text-white text-3xl font-bold">Capital Campus</h1>
-	// <img
-	//   src="https://placehold.jp/300x300.png"
-	//   class="hover:-rotate-[2deg] transition-all shadow-lg p-1 bg-white hover:cursor-pointer"
-	// />
-	// <p class="text-white overflow-wrap w-full">
-	//   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet gravida
-	//   nisi. Nulla quam eros, efficitur vitae odio laoreet, tristique hendrerit turpis.
-	// </p>
-	// <ColorButton
-	//   params={{
-	//     color: 'green',
-	//     link: null,
-	//     function: () => {
-	//       console.log('click');
-	//     }
-	//   }}
-	// >
-	//   詳細はこちら
-	// </ColorButton>
-	// </div>
-	// </div>
-	// </div>
-	// <div class="flex flex-col w-1/2 mx-auto gap-9">
-	//   <p class="text-2xl font-primary-jp">
-	//     SMEAG校は、セブ市内キャピタルキャンパス、マクタン島内にエンカントキャンパスの2つのキャンパスを運営しています。それぞれの特徴がございますので、ご留学の目的に合わせてお好きなキャンパスをお選びください。
-	//   </p>
-	//   <div class="flex flex-row place-content-between pt-5">
-	//     <div class="shadow-lg bg-green-600 p-5 flex flex-col flex-shrink max-w-[350px] gap-5">
-	//       <h1 class="text-white text-3xl font-bold">Encanto Campus</h1>
-	//       <img
-	//         src="https://placehold.jp/300x300.png"
-	//         class="hover:-rotate-[2deg] transition-all shadow-lg p-1 bg-white hover:cursor-pointer"
-	//       />
-	//       <p class="text-white overflow-wrap w-full">
-	//         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet gravida
-	//         nisi. Nulla quam eros, efficitur vitae odio laoreet, tristique hendrerit turpis.
-	//       </p>
-	//     </div>
-	//   </div>
-	// </div>
 </script>
 
 <PageWrapper>
-	<section class="bg-white">
+	<article class="bg-white pt-10 overflow-visible">
+		<MainHeading>SMEAGキャンパスの紹介</MainHeading>
 		<section
-			class="flex flex-col mx-auto h-[95vh] h-[95svh] place-content-center gap-[50px] w-[80%]"
+			class="flex flex-col mx-auto md:h-[95vh] h-[95svh] place-content-center gap-[50px] w-[80%] overflow-visible"
 		>
-			<h1 class="text-center font-heading-jp drop-shadow-md text-6xl font-bold text-sky-700">
-				SMEAGキャンパスの紹介
-			</h1>
-			<div
-				class="flex flex-row w-2/3 place-content-center items-center text-3xl mx-auto gap-7 font-bold"
-			>
+			<div class="flex flex-row w-2/3 place-content-center items-center text-2xl mx-auto gap-7">
 				<div
 					class="flex shrink-0 rounded-full shadow-md items-center justify-center border-4 border-orange-500 p-3"
 				>
-					<Icon icon="mingcute:school-fill" class="text-8xl text-sky-700 rounded-full" />
+					<Icon icon="ri:school-fill" class="text-8xl text-sky-700 rounded-full" />
 				</div>
-				<p>
-					SMEAG校は、セブ市内キャピタルキャンパス、マクタン島内にエンカントキャンパスの2つのキャンパスを運営しています。それぞれの特徴がございますので、ご留学の目的に合わせてお好きなキャンパスをお選びください。
-				</p>
+				<div class="bg-sky-50 p-10 shadow-xl">
+					<p class="mb-3">
+						SMEAG校は、セブ市内キャピタルキャンパス、マクタン島内にエンカントキャンパスの2つのキャンパスを運営しています。
+					</p>
+					<p>
+						それぞれの特徴がございますので、ご留学の目的に合わせてお好きなキャンパスをお選びください。
+					</p>
+				</div>
 			</div>
 			<div class="flex flex-row w-full place-content-around">
 				<ImageTitleCard data={{ url: '/Capital.jpg', alt: '', element: 'capital', color: 'green' }}
@@ -95,16 +43,70 @@
 				>
 			</div>
 		</section>
-	</section>
-	<section id="capital">
+	</article>
+	<article id="capital">
 		<VideoHeader url="https://smeag.s3.ap-northeast-1.amazonaws.com/video/intro.mp4"
-			>Capital</VideoHeader
+			>Capitalキャンパス</VideoHeader
 		>
-		<CtaBox />
-	</section>
+		<div class="py-10">
+			<section class="w-2/3 mx-auto">
+				<ThreeList>
+					<HeadingList
+						title="キャンパスの特徴"
+						slot="listOne"
+						icon="mdi:feature-highlight"
+						bgColor="#ea580c"
+						listContent={[
+							'IELTS公式試験会場',
+							'全てのコースが受講可能（ESL、ビジネス、TOEIC、TOEFL、IELTS、ファミリー）',
+							'1人部屋から4人部屋まで、選べる部屋タイプ',
+							'提携のS Hotelからの通学プランあり',
+							'市庁舎がある地域なので、治安面も安心',
+							'30分圏内に空港、病院、ショッピングモールがあるので生活しやすい'
+						]}
+					/>
+					<HeadingList
+						title="生活条件"
+						slot="listTwo"
+						icon="mdi:living-room"
+						bgColor="#0369a1"
+						listContent={[
+							'入校後4週間早朝、夜間スパルタクラス参加必須',
+							'門限：11:00 pmまで',
+							'平日週末外出や外泊可能'
+						]}
+					/>
+					<HeadingList
+						title="開講コース"
+						slot="listThree"
+						icon="ic:baseline-class"
+						bgColor="#15803d"
+						listContent={[
+							'ESL①コース：日常的な英会話能力を上げたい方におすすめ',
+							'ESL②コース：日常的な英会話能力を上げたい方におすすめ',
+							'TOEIC-Preコース：TOEICをこれから学習する方向け',
+							'Four'
+						]}
+					/>
+				</ThreeList>
+			</section>
+
+			<section class="flex flex-row place-content-around py-10 items-center">
+				<CtaBox bgColor="purple" buttonBg="green">
+					<span slot="text">キャピタルキャンパスで英語力を確実に身に着けよう!</span>
+					<span slot="button">お問い合わせ・無料留学相談はこちら</span>
+				</CtaBox>
+
+				<Iframe
+					caption={'Capitalキャンパスツアー'}
+					src={'https://www.youtube.com/embed/h3Mzmjj8q8U?si=9WuDzMNTo2H9VujA'}
+				/>
+			</section>
+		</div>
+	</article>
 	<section id="encanto">
 		<VideoHeader url="https://smeag.s3.ap-northeast-1.amazonaws.com/video/encanto.mp4"
-			>Encanto</VideoHeader
+			>Encantoキャンパス</VideoHeader
 		>
 	</section>
 </PageWrapper>
