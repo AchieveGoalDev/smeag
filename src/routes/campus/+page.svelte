@@ -6,6 +6,7 @@
 	import ThreeList from '$lib/components/lists/ThreeList.svelte';
 	import Iframe from '$lib/components/video/Iframe.svelte';
 	import MainHeading from '$lib/components/headings/MainHeading.svelte';
+	import Pricing from '$lib/components/pricing/Pricing.svelte';
 
 	import ImageTitleCard from '$lib/components/cards/ImageTitleCard.svelte';
 	import Icon from '@iconify/svelte';
@@ -102,6 +103,7 @@
 					src={'https://www.youtube.com/embed/h3Mzmjj8q8U?si=9WuDzMNTo2H9VujA'}
 				/>
 			</section>
+			<Pricing />
 		</div>
 	</article>
 	<section id="encanto">

@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
-	import { stringify } from 'postcss';
 
 	export let icon: string;
 	export let bgColor: string;
