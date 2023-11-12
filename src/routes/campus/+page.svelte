@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { capitalFees, encantoFees } from '$lib/components/pricing/pricingData';
+
 	import PageWrapper from '$lib/layout/PageWrapper.svelte';
 	import VideoHeader from '$lib/layout/video-header/VideoHeader.svelte';
 	import CtaBox from '$lib/components/heros/CTABox.svelte';
@@ -103,12 +105,13 @@
 					src={'https://www.youtube.com/embed/h3Mzmjj8q8U?si=9WuDzMNTo2H9VujA'}
 				/>
 			</section>
-			<Pricing />
+			<Pricing fees={capitalFees} />
 		</div>
 	</article>
 	<section id="encanto">
 		<VideoHeader url="https://smeag.s3.ap-northeast-1.amazonaws.com/video/encanto.mp4"
 			>Encantoキャンパス</VideoHeader
 		>
+		<Pricing fees={encantoFees} />
 	</section>
 </PageWrapper>
