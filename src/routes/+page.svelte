@@ -5,6 +5,7 @@
 	import ColorButton from '$lib/components/buttons/ColorButton.svelte';
 	import Hero from '$lib/layout/hero/Hero.svelte';
 	import PageWrapper from '$lib/layout/PageWrapper.svelte';
+	import HowTo from '$lib/layout/howto/HowTo.svelte';
 </script>
 
 <PageWrapper>
@@ -27,7 +28,7 @@
 				<div class="shadow-lg bg-green-600 p-5 flex flex-col flex-shrink max-w-[350px] gap-5">
 					<h1 class="text-white text-3xl font-bold">Encanto Campus</h1>
 					<img
-						src="https://placehold.jp/300x300.png"
+						src="/EncantoResize.png"
 						class="hover:-rotate-[2deg] transition-all shadow-lg p-1 bg-white hover:cursor-pointer"
 					/>
 					<p class="text-white overflow-wrap w-full">
@@ -49,7 +50,7 @@
 				<div class="shadow-lg bg-purple-600 p-5 flex flex-col flex-shrink max-w-[350px] gap-5">
 					<h1 class="text-white text-3xl font-bold">Capital Campus</h1>
 					<img
-						src="https://placehold.jp/300x300.png"
+						src="/Capital.jpg"
 						class="hover:-rotate-[2deg] transition-all shadow-lg p-1 bg-white hover:cursor-pointer"
 					/>
 					<p class="text-white overflow-wrap w-full">
@@ -76,8 +77,8 @@
 			slot="heading"
 			class="font-heading-jp text-5xl drop-shadow font-extrabold text-sky-800 flex flex-row justify-center items-center pr-3"
 		>
-			<h1>体験者のこえ</h1>
+			<h1>留学の流れ</h1>
 		</div>
-		<TestimonialScroller />
+		<HowTo />
 	</SectionWrapper>
 </PageWrapper>

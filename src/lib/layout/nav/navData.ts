@@ -5,10 +5,6 @@ export type NavButton = {
 
 export const navButtons: NavButton[] = [
 	{
-		url: '/howto',
-		text: '留学の流れ'
-	},
-	{
 		url: '/campus',
 		text: 'キャンパスの紹介・費用'
 	},

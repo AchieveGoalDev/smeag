@@ -641,10 +641,10 @@ const capitalCourses: CourseFees[] = [
 		]
 	},
 	{
-		name: 'TOEIC-Preコース',
+		name: 'TOEFL-Preコース',
 		description: [
 			'早朝授業×80分、マンツーマン×4コマ、1:4×2コマ、グループ×4コマ、夜間授業×90分',
-			'入学条件：特になし。これからTOEICを学ぶ初心者向けのコース。'
+			'入学条件：特になし。これからTOEFLを学ぶ初心者向けのコース。'
 		],
 		rooms: [
 			{
@@ -652,31 +652,31 @@ const capitalCourses: CourseFees[] = [
 				stay: [
 					{
 						name: '1週間',
-						amount: 108500
+						amount: 113400
 					},
 					{
 						name: '2週間',
-						amount: 156700
+						amount: 163800
 					},
 					{
 						name: '3週間',
-						amount: 204900
+						amount: 214200
 					},
 					{
 						name: '4週間',
-						amount: 241000
+						amount: 252000
 					},
 					{
 						name: '8週間',
-						amount: 482000
+						amount: 504000
 					},
 					{
 						name: '12週間',
-						amount: 723000
+						amount: 756000
 					},
 					{
 						name: '24週間',
-						amount: 1446000
+						amount: 1512000
 					}
 				]
 			},
@@ -685,36 +685,69 @@ const capitalCourses: CourseFees[] = [
 				stay: [
 					{
 						name: '1週間',
-						amount: 101300
+						amount: 106200
 					},
 					{
 						name: '2週間',
-						amount: 146300
+						amount: 153400
 					},
 					{
 						name: '3週間',
-						amount: 191300
+						amount: 200600
 					},
 					{
 						name: '4週間',
-						amount: 225000
+						amount: 236000
 					},
 					{
 						name: '8週間',
-						amount: 450000
+						amount: 472000
 					},
 					{
 						name: '12週間',
-						amount: 675000
+						amount: 708000
 					},
 					{
 						name: '24週間',
-						amount: 1350000
+						amount: 1416000
 					}
 				]
 			},
 			{
 				name: '3人',
+				stay: [
+					{
+						name: '1週間',
+						amount: 100400
+					},
+					{
+						name: '2週間',
+						amount: 145000
+					},
+					{
+						name: '3週間',
+						amount: 189600
+					},
+					{
+						name: '4週間',
+						amount: 223000
+					},
+					{
+						name: '8週間',
+						amount: 446000
+					},
+					{
+						name: '12週間',
+						amount: 669000
+					},
+					{
+						name: '24週間',
+						amount: 1338000
+					}
+				]
+			},
+			{
+				name: '4人',
 				stay: [
 					{
 						name: '1週間',
@@ -745,42 +778,802 @@ const capitalCourses: CourseFees[] = [
 						amount: 1272000
 					}
 				]
+			}
+		]
+	},
+	{
+		name: 'TOEFL 60/80/90/100コース',
+		description: [
+			'早朝授業×80分、マンツーマン×4コマ、1:4×2コマ、グループ×4コマ、夜間授業×90分',
+			'TOEFLの目標スコアを達成したい方向けのコース。',
+			'入学条件のスコアは過去2年以内に取得した公式試験の点数、もしくは入学時のレベルチェックテストの点数により判断されます。',
+			'【入学条件】',
+			'TOEFL60：IELTS3.5/TOEFL40/TOEIC490以上',
+			'TOEFL80：IELTS5.0/TOEFL60/TOEIC680以上',
+			'TOEFL90：IELTS6.0/TOEFL80/TOEIC800以上',
+			'TOEFL100：TOEFL90以上のみ'
+		],
+		rooms: [
+			{
+				name: '1人',
+				stay: [
+					{
+						name: '1週間',
+						amount: 121100
+					},
+					{
+						name: '2週間',
+						amount: 174900
+					},
+					{
+						name: '3週間',
+						amount: 228700
+					},
+					{
+						name: '4週間',
+						amount: 269000
+					},
+					{
+						name: '8週間',
+						amount: 538000
+					},
+					{
+						name: '12週間',
+						amount: 807000
+					},
+					{
+						name: '24週間',
+						amount: 1614000
+					}
+				]
+			},
+			{
+				name: '2人',
+				stay: [
+					{
+						name: '1週間',
+						amount: 113900
+					},
+					{
+						name: '2週間',
+						amount: 164500
+					},
+					{
+						name: '3週間',
+						amount: 215100
+					},
+					{
+						name: '4週間',
+						amount: 253000
+					},
+					{
+						name: '8週間',
+						amount: 506000
+					},
+					{
+						name: '12週間',
+						amount: 759000
+					},
+					{
+						name: '24週間',
+						amount: 1518000
+					}
+				]
+			},
+			{
+				name: '3人',
+				stay: [
+					{
+						name: '1週間',
+						amount: 108000
+					},
+					{
+						name: '2週間',
+						amount: 156000
+					},
+					{
+						name: '3週間',
+						amount: 204000
+					},
+					{
+						name: '4週間',
+						amount: 240000
+					},
+					{
+						name: '8週間',
+						amount: 480000
+					},
+					{
+						name: '12週間',
+						amount: 720000
+					},
+					{
+						name: '24週間',
+						amount: 1440000
+					}
+				]
 			},
 			{
 				name: '4人',
 				stay: [
 					{
 						name: '1週間',
-						amount: 90500
+						amount: 103100
 					},
 					{
 						name: '2週間',
-						amount: 130700
+						amount: 148900
 					},
 					{
 						name: '3週間',
-						amount: 170900
+						amount: 194700
 					},
 					{
 						name: '4週間',
-						amount: 201000
+						amount: 229000
 					},
 					{
 						name: '8週間',
-						amount: 402000
+						amount: 458000
 					},
 					{
 						name: '12週間',
-						amount: 603000
+						amount: 687000
 					},
 					{
 						name: '24週間',
-						amount: 1206000
+						amount: 1374000
 					}
 				]
 			}
 		]
 	},
+	{
+		name: 'IELTS-preコース',
+		description: [
+			'早朝授業×80分、マンツーマン×4コマ、1:4×2コマ、グループ×4コマ、夜間授業×90分',
+			'入学条件：特になし。これからIELTSを学ぶ初心者向けのコース。'
+		],
+		rooms: [
+			{
+				name: '1人',
+				stay: [
+					{
+						name: '1週間',
+						amount: 113400
+					},
+					{
+						name: '2週間',
+						amount: 163800
+					},
+					{
+						name: '3週間',
+						amount: 214200
+					},
+					{
+						name: '4週間',
+						amount: 252000
+					},
+					{
+						name: '8週間',
+						amount: 504000
+					},
+					{
+						name: '12週間',
+						amount: 756000
+					},
+					{
+						name: '24週間',
+						amount: 1512000
+					}
+				]
+			},
+			{
+				name: '2人',
+				stay: [
+					{
+						name: '1週間',
+						amount: 106200
+					},
+					{
+						name: '2週間',
+						amount: 153400
+					},
+					{
+						name: '3週間',
+						amount: 200600
+					},
+					{
+						name: '4週間',
+						amount: 236000
+					},
+					{
+						name: '8週間',
+						amount: 472000
+					},
+					{
+						name: '12週間',
+						amount: 708000
+					},
+					{
+						name: '24週間',
+						amount: 1416000
+					}
+				]
+			},
+			{
+				name: '3人',
+				stay: [
+					{
+						name: '1週間',
+						amount: 100400
+					},
+					{
+						name: '2週間',
+						amount: 145000
+					},
+					{
+						name: '3週間',
+						amount: 189600
+					},
+					{
+						name: '4週間',
+						amount: 223000
+					},
+					{
+						name: '8週間',
+						amount: 446000
+					},
+					{
+						name: '12週間',
+						amount: 669000
+					},
+					{
+						name: '24週間',
+						amount: 1338000
+					}
+				]
+			},
+			{
+				name: '4人',
+				stay: [
+					{
+						name: '1週間',
+						amount: 95400
+					},
+					{
+						name: '2週間',
+						amount: 137800
+					},
+					{
+						name: '3週間',
+						amount: 180200
+					},
+					{
+						name: '4週間',
+						amount: 212000
+					},
+					{
+						name: '8週間',
+						amount: 424000
+					},
+					{
+						name: '12週間',
+						amount: 636000
+					},
+					{
+						name: '24週間',
+						amount: 1272000
+					}
+				]
+			}
+		]
+	},
+	{
+		name: 'IELTS 5.5/6.0/6.5/7.0コース',
+		description: [
+			'早朝授業×80分、マンツーマン×4コマ、1:4×2コマ、グループ×4コマ、夜間授業×90分',
+			'IELTSの目標スコアを達成したい方向けのコース。',
+			'入学条件のスコアは過去2年以内に取得した公式試験の点数、もしくは入学時のレベルチェックテストの点数により判断されます。',
+			'【入学条件】',
+			'IELTS 5.5：IELTS3.5/TOEFL40/TOEIC490以上',
+			'IELTS 6.0：IELTS5.0/TOEFL60/TOEIC680以上',
+			'IELTS 6.5：IELTS6.0/TOEFL80/TOEIC800以上',
+			'IELTS 7.0：IELTS6.5以上のみ'
+		],
+		rooms: [
+			{
+				name: '1人',
+				stay: [
+					{
+						name: '1週間',
+						amount: 121100
+					},
+					{
+						name: '2週間',
+						amount: 174900
+					},
+					{
+						name: '3週間',
+						amount: 228700
+					},
+					{
+						name: '4週間',
+						amount: 269000
+					},
+					{
+						name: '8週間',
+						amount: 538000
+					},
+					{
+						name: '12週間',
+						amount: 807000
+					},
+					{
+						name: '24週間',
+						amount: 1614000
+					}
+				]
+			},
+			{
+				name: '2人',
+				stay: [
+					{
+						name: '1週間',
+						amount: 113900
+					},
+					{
+						name: '2週間',
+						amount: 164500
+					},
+					{
+						name: '3週間',
+						amount: 215100
+					},
+					{
+						name: '4週間',
+						amount: 253000
+					},
+					{
+						name: '8週間',
+						amount: 506000
+					},
+					{
+						name: '12週間',
+						amount: 759000
+					},
+					{
+						name: '24週間',
+						amount: 1518000
+					}
+				]
+			},
+			{
+				name: '3人',
+				stay: [
+					{
+						name: '1週間',
+						amount: 108000
+					},
+					{
+						name: '2週間',
+						amount: 156000
+					},
+					{
+						name: '3週間',
+						amount: 204000
+					},
+					{
+						name: '4週間',
+						amount: 240000
+					},
+					{
+						name: '8週間',
+						amount: 480000
+					},
+					{
+						name: '12週間',
+						amount: 720000
+					},
+					{
+						name: '24週間',
+						amount: 1440000
+					}
+				]
+			},
+			{
+				name: '4人',
+				stay: [
+					{
+						name: '1週間',
+						amount: 103100
+					},
+					{
+						name: '2週間',
+						amount: 148900
+					},
+					{
+						name: '3週間',
+						amount: 194700
+					},
+					{
+						name: '4週間',
+						amount: 229000
+					},
+					{
+						name: '8週間',
+						amount: 458000
+					},
+					{
+						name: '12週間',
+						amount: 687000
+					},
+					{
+						name: '24週間',
+						amount: 1374000
+					}
+				]
+			}
+		]
+	},
+	{
+		name: 'ビジネスコース',
+		description: [
+			'早朝授業×80分、マンツーマン×4コマ、1:4×2コマ、グループ×4コマ、夜間授業×90分',
+			'入学条件：特になし。初日のレベルチェックテストを基に英語レベルに合ったクラスに分かれます。'
+		],
+		rooms: [
+			{
+				name: '1人',
+				stay: [
+					{
+						name: '1週間',
+						amount: 134100
+					},
+					{
+						name: '2週間',
+						amount: 193700
+					},
+					{
+						name: '3週間',
+						amount: 253300
+					},
+					{
+						name: '4週間',
+						amount: 298000
+					},
+					{
+						name: '8週間',
+						amount: 596000
+					},
+					{
+						name: '12週間',
+						amount: 8940000
+					},
+					{
+						name: '24週間',
+						amount: 1788000
+					}
+				]
+			},
+			{
+				name: '2人',
+				stay: [
+					{
+						name: '1週間',
+						amount: 126900
+					},
+					{
+						name: '2週間',
+						amount: 183300
+					},
+					{
+						name: '3週間',
+						amount: 239700
+					},
+					{
+						name: '4週間',
+						amount: 282000
+					},
+					{
+						name: '8週間',
+						amount: 564000
+					},
+					{
+						name: '12週間',
+						amount: 846000
+					},
+					{
+						name: '24週間',
+						amount: 1692000
+					}
+				]
+			},
+			{
+				name: '3人',
+				stay: [
+					{
+						name: '1週間',
+						amount: 121100
+					},
+					{
+						name: '2週間',
+						amount: 174900
+					},
+					{
+						name: '3週間',
+						amount: 228700
+					},
+					{
+						name: '4週間',
+						amount: 269000
+					},
+					{
+						name: '8週間',
+						amount: 538000
+					},
+					{
+						name: '12週間',
+						amount: 807000
+					},
+					{
+						name: '24週間',
+						amount: 1614000
+					}
+				]
+			},
+			{
+				name: '4人',
+				stay: [
+					{
+						name: '1週間',
+						amount: 116100
+					},
+					{
+						name: '2週間',
+						amount: 167700
+					},
+					{
+						name: '3週間',
+						amount: 219300
+					},
+					{
+						name: '4週間',
+						amount: 258000
+					},
+					{
+						name: '8週間',
+						amount: 516000
+					},
+					{
+						name: '12週間',
+						amount: 774000
+					},
+					{
+						name: '24週間',
+						amount: 1548000
+					}
+				]
+			}
+		]
+	},
+	{
+		name: 'ファミリーコース(２－５歳)',
+		description: [
+			'早朝授業×80分、マンツーマン×4コマ、1:4×2コマ、グループ×4コマ、夜間授業×90分',
+			'入学条件：特になし。初日のレベルチェックテストを基に英語レベルに合ったクラスに分かれます。'
+		],
+		rooms: [
+			{
+				name: '2人',
+				stay: [
+					{
+						name: '1週間',
+						amount: 117000
+					},
+					{
+						name: '2週間',
+						amount: 169000
+					},
+					{
+						name: '3週間',
+						amount: 221000
+					},
+					{
+						name: '4週間',
+						amount: 260000
+					},
+					{
+						name: '8週間',
+						amount: 520000
+					},
+					{
+						name: '12週間',
+						amount: 780000
+					},
+					{
+						name: '24週間',
+						amount: 1560000
+					}
+				]
+			},
+			{
+				name: '3人',
+				stay: [
+					{
+						name: '1週間',
+						amount: 111200
+					},
+					{
+						name: '2週間',
+						amount: 160600
+					},
+					{
+						name: '3週間',
+						amount: 210000
+					},
+					{
+						name: '4週間',
+						amount: 247000
+					},
+					{
+						name: '8週間',
+						amount: 494000
+					},
+					{
+						name: '12週間',
+						amount: 741000
+					},
+					{
+						name: '24週間',
+						amount: 1482000
+					}
+				]
+			},
+			{
+				name: '4人',
+				stay: [
+					{
+						name: '1週間',
+						amount: 106200
+					},
+					{
+						name: '2週間',
+						amount: 153400
+					},
+					{
+						name: '3週間',
+						amount: 200600
+					},
+					{
+						name: '4週間',
+						amount: 236000
+					},
+					{
+						name: '8週間',
+						amount: 472000
+					},
+					{
+						name: '12週間',
+						amount: 708000
+					},
+					{
+						name: '24週間',
+						amount: 1416000
+					}
+				]
+			}
+		]
+	},
+	{
+		name: 'ファミリーコース(6－12歳)',
+		description: [
+			'早朝授業×80分、マンツーマン×4コマ、1:4×2コマ、グループ×4コマ、夜間授業×90分',
+			'入学条件：特になし。初日のレベルチェックテストを基に英語レベルに合ったクラスに分かれます。'
+		],
+		rooms: [
+			{
+				name: '2人',
+				stay: [
+					{
+						name: '1週間',
+						amount: 108900
+					},
+					{
+						name: '2週間',
+						amount: 157300
+					},
+					{
+						name: '3週間',
+						amount: 205700
+					},
+					{
+						name: '4週間',
+						amount: 242000
+					},
+					{
+						name: '8週間',
+						amount: 484000
+					},
+					{
+						name: '12週間',
+						amount: 726000
+					},
+					{
+						name: '24週間',
+						amount: 1452000
+					}
+				]
+			},
+			{
+				name: '3人',
+				stay: [
+					{
+						name: '1週間',
+						amount: 103100
+					},
+					{
+						name: '2週間',
+						amount: 148900
+					},
+					{
+						name: '3週間',
+						amount: 194700
+					},
+					{
+						name: '4週間',
+						amount: 229000
+					},
+					{
+						name: '8週間',
+						amount: 458000
+					},
+					{
+						name: '12週間',
+						amount: 687000
+					},
+					{
+						name: '24週間',
+						amount: 1374000
+					}
+				]
+			},
+			{
+				name: '4人',
+				stay: [
+					{
+						name: '1週間',
+						amount: 98100
+					},
+					{
+						name: '2週間',
+						amount: 141700
+					},
+					{
+						name: '3週間',
+						amount: 185300
+					},
+					{
+						name: '4週間',
+						amount: 218000
+					},
+					{
+						name: '8週間',
+						amount: 436000
+					},
+					{
+						name: '12週間',
+						amount: 654000
+					},
+					{
+						name: '24週間',
+						amount: 1308000
+					}
+				]
+			}
+		]
+	},
+
 ];
 
 const encantoCourses: CourseFees[] = [
