@@ -1,22 +1,31 @@
 <script lang="ts">
 	import Logo from '$lib/components/svg/Logo.svelte';
+	import LogoSmall from '$lib/components/svg/LogoSmall.svelte';
 	import NavButton from './NavButton.svelte';
 	import { navButtons } from './navData';
 	import ContactButton from '$lib/components/buttons/ContactButton.svelte';
+
+	import { window } from '$lib/store/window';
 </script>
 
 <nav class="h-[80px bg-opacity-0 drop-shadow-lg shadow-lg flex-col overflow-visible">
 	<div class="flex flex-row items-center h-[75px] bg-white overflow-visible">
 		<a href="/" class="cursor-pointer w-1/5">
 			<div class="p-2">
-				<Logo />
+				{#if $window.width > 1220}
+					<Logo />
+				{:else}
+					<LogoSmall />
+				{/if}
 			</div>
 		</a>
 		<div
-			class="text-xl font-heading-jp font-bold text-slate-800
+			class="text-md lg:text-lg xl:text-xl font-heading-jp font-bold text-slate-800
 			 w-3/5"
 		>
-			<ul class="w-full flex flex-row place-content-between px-5">
+			<ul
+				class="w-full flex flex-row place-content-center gap-3 lg:gap-0 lg:place-content-between px-5"
+			>
 				{#each navButtons as button}
 					<NavButton url={button.url}>
 						{button.text}

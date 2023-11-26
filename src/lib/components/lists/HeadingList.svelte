@@ -9,7 +9,9 @@
 	export let title: string;
 </script>
 
-<div class="flex flex-col items-center align-baseline max-w-1/5 bg-white shadow-md rounded-md">
+<div
+	class="flex flex-col items-center align-baseline bg-white shadow-md rounded-md w-full lg:w-auto"
+>
 	<ListHeading {bgColor} {icon}>
 		{title}
 	</ListHeading>

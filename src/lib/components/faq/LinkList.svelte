@@ -27,26 +27,23 @@
 	} else if ((color = 'blue')) {
 		colorData = blueColorData;
 	}
+
+	$: console.log(collections);
 </script>
 
 <div class={`border-l-4 ${colorData.border} p-5 ${colorData.background} w-auto`}>
 	<h2 class="mx-3 text-2xl font-bold">カテゴリーを見る</h2>
 	<div class="md:grid grid-cols-2">
 		{#each collections as collection}
-			<button
+			<a
 				class="flex items-center ml-5 transition-all hover:-translate-y-1 hover:scale-101 hover:text-orange-600"
-				on:click={() =>
-					animateScroll.scrollTo({
-						element: '#id' + collection.id,
-						duration: 400,
-						offset: -80
-					})}
+				href={`#id${collection.id}`}
 			>
 				<div class="text-2xl text-slate-600">
 					<Icon icon="material-symbols:link" />
 				</div>
 				<p class="block my-2 ml-2 underline">{collection.title}</p>
-			</button>
+			</a>
 		{/each}
 	</div>
 </div>

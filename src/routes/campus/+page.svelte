@@ -19,25 +19,10 @@
 	<Container>
 		<article class="bg-white pt-10 overflow-visible">
 			<MainHeading>SMEAGキャンパスの紹介</MainHeading>
-			<section
-				class="flex flex-col mx-auto md:h-[95vh] h-[95svh] place-content-center gap-[50px] w-[80%] overflow-visible"
-			>
-				<div class="flex flex-row w-2/3 place-content-center items-center text-2xl mx-auto gap-7">
-					<div
-						class="flex shrink-0 rounded-full shadow-md items-center justify-center border-4 border-orange-500 p-3"
-					>
-						<Icon icon="ri:school-fill" class="text-8xl text-sky-700 rounded-full" />
-					</div>
-					<div class="bg-sky-50 p-10 shadow-xl">
-						<p class="mb-3">
-							SMEAG校は、セブ市内キャピタルキャンパス、マクタン島内にエンカントキャンパスの2つのキャンパスを運営しています。
-						</p>
-						<p>
-							それぞれの特徴がございますので、ご留学の目的に合わせてお好きなキャンパスをお選びください。
-						</p>
-					</div>
-				</div>
-				<div class="flex flex-row w-full place-content-around">
+			<section class="flex flex-col mx-auto place-content-center gap-[50px] w-[80%]">
+				<div
+					class="flex flex-col md:px-0 px-4 md:flex-row w-full place-content-start md:place-content-around"
+				>
 					<ImageTitleCard
 						data={{ url: '/Capital.jpg', alt: '', element: 'capital', color: 'green' }}
 						>Capital</ImageTitleCard
@@ -47,6 +32,26 @@
 						data={{ url: '/EncantoResize.png', alt: '', element: 'encanto', color: 'blue' }}
 						>Encanto</ImageTitleCard
 					>
+				</div>
+				<div class="flex flex-row place-content-center items-center text-2xl mx-auto gap-7">
+					<div class="p-10 flex flex-col gap-3">
+						<div
+							class="flex flex-row border-orange-500 bg-orange-500 rounded-full border-4 shadow-lg"
+						>
+							<Icon
+								icon="ri:school-fill"
+								class="text-6xl text-white bg-orange-500 rounded-full place-self-start p-2"
+							/>
+							<h3 class="text-3xl font-bold text-white self-center">SMEAGのキャンパスについて</h3>
+						</div>
+
+						<p class="mb-3">
+							SMEAG校は、セブ市内キャピタルキャンパス、マクタン島内にエンカントキャンパスの2つのキャンパスを運営しています。
+						</p>
+						<p>
+							それぞれの特徴がございますので、ご留学の目的に合わせてお好きなキャンパスをお選びください。
+						</p>
+					</div>
 				</div>
 			</section>
 		</article>

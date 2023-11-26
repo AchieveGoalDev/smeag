@@ -1,8 +1,8 @@
 <script lang="ts">
 	import NavBar from '$lib/layout/nav/NavBar.svelte';
+	import MobileNav from '$lib/layout/nav/MobileNav.svelte';
 	import { window } from '$lib/store/window';
 	import { onNavigate } from '$app/navigation';
-	import { page } from '$app/stores';
 	import '../app.css';
 	import { fade } from 'svelte/transition';
 
@@ -31,7 +31,11 @@
 </script>
 
 <svelte:window bind:innerWidth={windowWidth} bind:innerHeight={windowHeight} />
-<NavBar />
+{#if windowWidth < 600}
+	<MobileNav />
+{:else}
+	<NavBar />
+{/if}
 <div class="text-slate-800">
 	{#key data.url}
 		<div in:fade={{ delay: 500, duration: 500 }} out:fade={{ duration: 500 }}>

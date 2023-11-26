@@ -35,7 +35,6 @@
 				data.color === 'blue' ? 'border-expand-blue' : 'border-expand-green'
 			}`}
 		/>
-    
 	</h3>
 </a>
 

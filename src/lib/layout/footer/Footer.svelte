@@ -7,9 +7,10 @@
 </script>
 
 <!-- <div class="h-[20px] bg-gradient-to-b from-transparent to-sky-800" /> -->
-<footer class="w-full py-10 bg-sky-800 flex flex-row place-content-around text-white items-top">
+<footer
+	class="w-full py-10 bg-sky-800 flex flex-col px-[2rem] gap-4 md:gap-0 md:px-0 md:flex-row place-content-around text-white items-top"
+>
 	<FooterContact />
-	<FooterLinks params={courseLinks} />
 	<FooterLinks params={courseLinks} />
 	<FooterSocials />
 	<Affiliates />

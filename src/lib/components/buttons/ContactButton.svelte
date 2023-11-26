@@ -5,7 +5,7 @@
 	export let params: ContactButtonParams;
 
 	let basicButton =
-		'transition-all active:-translate-y-[.25rem] hover:-translate-y-[.5rem] text-2xl text-bold font-heading-jp shadow-md py-2 px-8 rounded-lg font-bold text-amber-50 ';
+		'transition-all active:-translate-y-[.25rem] hover:-translate-y-[.5rem] text-lg lg:text-xl xl:text-2xl text-2xl text-bold font-heading-jp shadow-md py-2 px-[1em] rounded-lg font-bold text-amber-50 ';
 
 	function dispatchStyle(color: string) {
 		switch (color) {
