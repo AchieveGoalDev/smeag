@@ -124,6 +124,59 @@
 			>Encantoキャンパス</VideoHeader
 		>
 		<Container>
+			<section class="mx-4">
+				<ThreeList>
+					<HeadingList
+						title="キャンパスの特徴"
+						slot="listOne"
+						icon="mdi:feature-highlight"
+						bgColor="#ea580c"
+						listContent={[
+							'IELTS公式試験会場',
+							'全てのコースが受講可能（ESL、ビジネス、TOEIC、TOEFL、IEL  TS、ファミリー）',
+							'1人部屋から4人部屋まで、選べる部屋タイプ',
+							'提携のS Hotelからの通学プランあり',
+							'市庁舎がある地域なので、治安面も安心',
+							'30分圏内に空港、病院、ショッピングモールがあるので生活しやすい'
+						]}
+					/>
+					<HeadingList
+						title="生活条件"
+						slot="listTwo"
+						icon="mdi:living-room"
+						bgColor="#0369a1"
+						listContent={[
+							'入校後4週間早朝、夜間スパルタクラス参加必須',
+							'門限：11:00 pmまで',
+							'平日週末外出や外泊可能'
+						]}
+					/>
+					<HeadingList
+						title="開講コース"
+						slot="listThree"
+						icon="ic:baseline-class"
+						bgColor="#15803d"
+						listContent={[
+							'ESL①コース：日常的な英会話能力を上げたい方におすすめ',
+							'ESL②コース：日常的な英会話能力を上げたい方におすすめ',
+							'TOEIC-Preコース：TOEICをこれから学習する方向け',
+							'Four'
+						]}
+					/>
+				</ThreeList>
+			</section>
+
+			<section class="flex flex-row place-content-around py-10 items-center">
+				<CtaBox bgColor="purple" buttonBg="green">
+					<span slot="text">キャピタルキャンパスで英語力を確実に身に着けよう!</span>
+					<span slot="button">お問い合わせ・無料留学相談はこちら</span>
+				</CtaBox>
+
+				<Iframe
+					caption={'Capitalキャンパスツアー'}
+					src={'https://www.youtube.com/embed/h3Mzmjj8q8U?si=9WuDzMNTo2H9VujA'}
+				/>
+			</section>
 			<Pricing fees={encantoFees} heading={'エンカントキャンパスの滞在費用予算'} />
 		</Container>
 	</section>
