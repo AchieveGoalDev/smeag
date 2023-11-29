@@ -2,7 +2,7 @@
 	import { window } from '$lib/store/window';
 	import Icon from '@iconify/svelte';
 	import ColorButton from '$lib/components/buttons/ColorButton.svelte';
-	import Wave from './Wave.svelte';
+	import PhotoImageContainer from '$lib/components/cards/PhotoImageContainer.svelte';
 
 	let position = 'in';
 
@@ -17,7 +17,6 @@
 	$: position = position;
 </script>
 
-<button on:click={changeXOffset}>toggle</button>
 <div class="border-b-2 border-orange-500">
 	<div style:height={`${$window.height - 80}px`} class="flex flex-row w-full mx-[100px]">
 		<div class="w-1/2 h-full flex flex-col items-center justify-center">
@@ -64,14 +63,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="w-1/2 relative">
-			<!-- <WaveTop /> -->
-			<Wave color="#0284c7" {position} type={'wave'} />
-			<Wave color="white" {position} type={'foam'} />
-			<div class="flex flex-col h-full items-center justify-center">
-				<div class="flex flex-row w-full items-center justify-center">
-					<img src="https://placehold.jp/500x500.png" alt="hero" />
-				</div>
+		<div class="w-1/2 h-full flex items-center justify-center overflow-visible">
+			<div class="flex items-start overflow-visible">
+				<PhotoImageContainer />
 			</div>
 		</div>
 	</div>

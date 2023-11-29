@@ -8,6 +8,7 @@ export default {
 				'primary-jp': ['Noto Serif JP'],
 				'heading-en': ['Karantina'],
 				'primary-en': ['Noto Sans'],
+				'handwriting': ['Slackside One']
 			}
 		}
 	},
