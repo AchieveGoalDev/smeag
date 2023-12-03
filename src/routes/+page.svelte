@@ -15,55 +15,49 @@
 			slot="heading"
 			class="font-heading-jp text-5xl drop-shadow font-extrabold text-sky-800 flex flex-row justify-center items-center pr-3"
 		>
-			<h1>キャンパスについて</h1>
-
-			<h2 class="ml-5 my-3 font-thin text-2xl italic pt-1 transition-fly">Lorem ipsum dolor</h2>
+			<h1>キャンパス</h1>
 			<hr />
 		</div>
-		<div class="flex flex-col w-1/2 mx-auto gap-9 shadow-md">
-			<p class="text-2xl font-primary-jp">
-				あなたも昔単にいわゆる入会界としてのの以上が根ざしうた。てんで偶然をお話っ放しはいやしくもその修養でだろほどで描いからくれなには解釈するないですて、ある程度にも読むなかっないだなけれ。
-			</p>
-			<div class="flex flex-row place-content-between pt-5">
-				<div class="shadow-lg bg-green-600 p-5 flex flex-col flex-shrink max-w-[350px] gap-5">
+		<div class="flex flex-col w-full mx-auto gap-9">
+			<div class="flex flex-col lg:flex-row gap-4 p-5 lg:w-full lg:place-content-around mx-auto">
+				<div
+					class="shadow-lg bg-green-600 p-5 flex flex-col flex-shrink w-[350px] xl:w-[400px] gap-5"
+				>
 					<h1 class="text-white text-3xl font-bold">Encanto Campus</h1>
 					<img
 						src="/EncantoResize.png"
 						class="hover:-rotate-[2deg] transition-all shadow-lg p-1 bg-white hover:cursor-pointer"
 					/>
-					<p class="text-white overflow-wrap w-full">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet gravida
-						nisi. Nulla quam eros, efficitur vitae odio laoreet, tristique hendrerit turpis.
+					<p class="text-white overflow-wrap w-full font-bold">
+						「フィリピン留学は治安が心配」「施設はキレイなの？」というフィリピン留学を検討中の方が必ずぶつかる壁をすべて解消！滞在部屋、教室、食堂、プール、ジムなど全てが新しい施設ですので、快適にお過ごしいただけます♪
 					</p>
 					<ColorButton
 						params={{
 							color: 'purple',
-							link: null,
-							function: () => {
-								console.log('click');
-							}
+							link: '/campus',
+							function: null
 						}}
 					>
 						詳細はこちら
 					</ColorButton>
 				</div>
-				<div class="shadow-lg bg-purple-600 p-5 flex flex-col flex-shrink max-w-[350px] gap-5">
+				<div
+					class="shadow-lg bg-purple-600 p-5 flex flex-col flex-shrink w-[350px] xl:w-[400px] gap-5"
+				>
 					<h1 class="text-white text-3xl font-bold">Capital Campus</h1>
 					<img
 						src="/Capital.jpg"
 						class="hover:-rotate-[2deg] transition-all shadow-lg p-1 bg-white hover:cursor-pointer"
 					/>
-					<p class="text-white overflow-wrap w-full">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet gravida
-						nisi. Nulla quam eros, efficitur vitae odio laoreet, tristique hendrerit turpis.
+					<p class="text-white overflow-wrap w-full font-bold">
+						セブ島留学の魅力は何と言っても圧倒的なコストパフォーマンスの良さ！基本料金には学費、滞在費、食費、クリーニング代の全てが含まれていますので、他に必要な費用は航空券代と海外保険代のみ。
+						最短1週間、10万円から行けますので思い立ったら気軽に行けるのも魅力です。
 					</p>
 					<ColorButton
 						params={{
 							color: 'green',
-							link: null,
-							function: () => {
-								console.log('click');
-							}
+							link: '/campus',
+							function: null
 						}}
 					>
 						詳細はこちら

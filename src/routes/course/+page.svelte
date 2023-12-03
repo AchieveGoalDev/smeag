@@ -1,11 +1,13 @@
 <script lang="ts">
 	import PageWrapper from '$lib/layout/PageWrapper.svelte';
 	import CourseSelector from '$lib/layout/courses/CourseSelector.svelte';
+	import MobileCourseSelector from '$lib/layout/courses/MobileCourseSelector.svelte';
 	import CourseScroller from '$lib/layout/courses/CourseScroller.svelte';
 	import CourseChart from '$lib/layout/courses/CourseChart.svelte';
 	import Cirriculum from '$lib/layout/courses/Cirriculum.svelte';
 
 	import { courses } from '$lib/layout/courses/courseData';
+	import { window } from '$lib/store/window';
 
 	let index = 0;
 	//TODO resize images
@@ -13,14 +15,11 @@
 
 <PageWrapper>
 	<section class="bg-white py-[50px]">
-		<div
-			class="bg-sky-700 flex flex-row w-1/2 xl:w-5/6 px-5 py-2 gap-3 rounded-md mx-auto shadow-md"
-		>
-			<h1 class="text-center font-heading-jp font-black text-3xl text-white py-3 shrink-0">
-				コース選択
-			</h1>
+		{#if $window.width > 1070}
 			<CourseSelector bind:currentIndex={index} />
-		</div>
+		{:else}
+			<MobileCourseSelector bind:currentIndex={index} />
+		{/if}
 		<CourseScroller bind:currentIndex={index} />
 
 		{#if courses[index].bannerPath}

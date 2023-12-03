@@ -42,7 +42,7 @@
 	];
 </script>
 
-<form class="grid grid-cols-3 bg-white gap-1 shadow-xl">
+<form class="grid grid-cols-3 bg-white gap-1 shadow-xl" method="POST">
 	<h2 class="col-span-full text-center bg-sky-600 font-bold text-white text-2xl p-3">
 		メールでお問い合わせ
 	</h2>
@@ -63,7 +63,7 @@
 	<div class="col-span-full place-items-center flex flex-row justify-center items-center py-5">
 		<button
 			class="self-start bg-sky-700 text-white text-2xl font-bold rounded-md py-2 px-[4rem]"
-			on:click={() => console.log('boop')}>送信</button
+			type="submit">送信</button
 		>
 	</div>
 </form>

@@ -18,13 +18,17 @@
 </script>
 
 <li>
-	<button on:click={handleSetIndex} class={`font-bold text-xl p-2 rounded-md ${selectState}`}>
+	<button
+		on:click={handleSetIndex}
+		class={`font-bold text-md lg:text-lg xl:text-xl p-2 rounded-md ${selectState}`}
+	>
 		<slot />
 	</button>
 </li>
 
 <style lang="postcss">
 	.selected {
+		border: none;
 		background-color: #ea580c;
 		color: white;
 		transition-property: background-color;
@@ -38,6 +42,7 @@
 		transition-property: background-color, color;
 		transition-duration: 200ms;
 		transition-timing-function: ease-in-out;
+		border: #f59e0b 2px solid;
 	}
 
 	.unselected:hover {

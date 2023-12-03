@@ -15,6 +15,7 @@
 		"@iconify/svelte": "^3.1.4",
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/kit": "^1.20.4",
+		"@types/nodemailer": "^6.4.14",
 		"@typescript-eslint/eslint-plugin": "^6.0.0",
 		"@typescript-eslint/parser": "^6.0.0",
 		"autoprefixer": "^10.4.16",
@@ -35,6 +36,7 @@
 	"type": "module",
 	"dependencies": {
 		"chart.js": "^4.4.0",
+		"nodemailer": "^6.9.7",
 		"svelte-scrollto": "^0.2.0"
 	}
 }
