@@ -1,4 +1,5 @@
 <script lang="ts">
+	import MainHeading from '../headings/MainHeading.svelte';
 	import DummyCheckGroup from './DummyCheckGroup.svelte';
 	import DummyRadio from './DummyRadio.svelte';
 	import DummySelect from './DummySelect.svelte';
@@ -43,9 +44,9 @@
 </script>
 
 <form class="grid grid-cols-3 bg-white gap-1 shadow-xl" method="POST">
-	<h2 class="col-span-full text-center bg-sky-600 font-bold text-white text-2xl p-3">
-		メールでお問い合わせ
-	</h2>
+	<div class="col-span-3 my-2">
+		<MainHeading>メールでお問い合わせ</MainHeading>
+	</div>
 	<DummyInput label={'氏名'} placeholder={'例: 山田　太郎'} />
 	<DummyInput label={'フリガナ'} placeholder={'例: ヤマダ　タロウ'} />
 	<DummyInput label={'メールアドレス'} placeholder={'例: xxx@xxx.com'} />
