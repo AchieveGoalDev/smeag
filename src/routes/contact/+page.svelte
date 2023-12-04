@@ -9,7 +9,7 @@
 	<Container>
 		<section class="my-10 bg-white p-4 shadow-md">
 			<MainHeading>ラインでお問い合わせ</MainHeading>
-			<img src="/qr.png" class="mx-auto shadow-lg my-4" />
+			<img src="/qr.png" class="mx-auto shadow-lg my-4" alt="ラインお問い合わせのQRコード" />
 			<div class="flex flex-col gap-4 bg-sky-50 rounded-md">
 				<p class="text-2xl w-full text-center">
 					友達追加して、LINEでお気軽にご相談ください！（対応可能時間平日9時～18時）
