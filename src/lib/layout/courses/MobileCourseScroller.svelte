@@ -8,12 +8,12 @@
 </script>
 
 <div class="w-full flex flex-row items-center justify-center">
-	<div class="grid grid-cols-12 w-2/3 my-4">
+	<div class="grid grid-cols-12 w-full my-4">
 		<ScrollTab bind:index={currentIndex} {maxIndex} direction="left" />
 		<div class="col-span-10 flex flex-row items-center justify-center">
-			<h1 class="grid grid-cols-2 grid-rows-1 p-10 text-6xl gap-3">
+			<h1 class="grid grid-rows-2 p-10 text-2xl gap-3">
 				<div
-					class="grid grid-cols-1 grid-rows-1 col-start-1 col-span-1 row-span-1 overflow-hidden max-h-full bg-orange-600 text-white font-bold p-4 rounded-md text-center shadow-md"
+					class="grid grid-cols-1 grid-rows-1 col-start-1 col-span-2 row-span-1 overflow-hidden max-h-full bg-orange-600 text-white font-bold p-4 rounded-md text-center shadow-md"
 				>
 					{#each courses as course, i (course)}
 						{#if i === currentIndex}

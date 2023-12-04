@@ -7,9 +7,9 @@
 	let index = 0;
 </script>
 
-<section class="w-[80%] mx-auto">
+<section class="w-full md:w-[80%] mx-auto">
 	{#if collection.length > 1}
-		<h2 class="flex flex-cols w-full">
+		<h2 class="flex flex-col w-full">
 			<div class="grid grid-cols-10 w-full">
 				<div class="col-start-1 col-span-1">
 					<ScrollTab bind:index maxIndex={collection.length - 1} direction={'left'} />
@@ -30,7 +30,7 @@
 						</nav>
 					</div>
 					<h3
-						class="text-center border-sky-700 border-[5px] text-slate-800 font-bold py-1 text-2xl"
+						class="text-center border-sky-700 border-[5px] text-slate-800 font-bold min-h-[3rem] text-2xl"
 					>
 						{collection[index].title}
 					</h3>
@@ -56,7 +56,7 @@
 					<tr>
 						{#each rows as cell}
 							{#if i % 2 === 0}
-								<td class="bg-sky-50 p-2"> {cell}</td>
+								<td class="bg-sky-50 p-2 text-sm md:text-md"> {cell}</td>
 							{:else}
 								<td>{cell}</td>
 							{/if}
